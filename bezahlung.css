@@ -1,0 +1,100 @@
+html {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+#logo {
+    height: 4em;
+    background-image: url(images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    align-items: baseline;
+}
+
+.red {
+    color: #D81E05;
+    font-weight: bold;
+}
+
+#back {
+    font-weight: bold;
+}
+
+#back::after {
+    content: ' 'url(images/back.png);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#zahlung_text {
+    font-size: 1.4em;
+}
+
+#test1 {
+    margin-top: 4em;
+}
+
+#test1, #test2, #test3, #test4 {
+    background: #000000;
+    border: 2px solid #D81E05;
+    border-radius: 6px;
+    width: calc(100% - 1.95em);
+    padding: 1.0625em 0.875em 1.0625em 0.875em;
+    color: white;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+#test4 {
+    background: #5CB075;
+    width: 50%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* mobile first landscape anfang */
+
+@media (orientation: landscape) {
+    #zahlung_text {
+        font-size: 1.7em;
+    }
+    #test1 {
+        margin-top: 2em;
+    }
+    #test1, #test2, #test3, #test4 {
+        background: #000000;
+        border: 2px solid #D81E05;
+        border-radius: 6px;
+        width: calc(100% - 1.95em);
+        padding: 1.0625em 0.875em 1.0625em 0.875em;
+        color: white;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    #test4 {
+        background: #5CB075;
+        width: 50%;
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* mobile first landscape ende */

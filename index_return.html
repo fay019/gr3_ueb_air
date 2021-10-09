@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Index return</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="logo">
+
+        </div>
+        <header>
+            <section id="flugtyp_text">
+                <span>Hin- und Rückflug</span>
+                <span><a href="index_oneway.html">Nur Hinflug</a></span>
+            </section>
+
+            <section id="flugtyp_auswahl">
+                <input type="radio" name="flug" value="" checked>
+                <input type="radio" name="flug" value="">
+            </section>
+        </header>
+        <main>
+            <section id="flughafen_text">
+                <p class="grey bold">Von:</p>
+                <p class="grey bold">Nach:</p>
+            </section>
+            <section id="flughafen_auswahl">
+                <span class="flughafen bold" id="start"><a href="suche_return_start.html">Wien</a></span>
+                <span class="flughafen bold" id="ende"><a href="suche_return_stop.html">Paris</a></span>
+            </section>
+            <section id="datum_text">
+                <a href="kalendar_return.html"><span class="datum">23/10/2021</span></a>
+                <a href="kalendar_return.html"><span class="datum">30/10/2021</span></a>
+            </section>
+            <section id="personen">
+                <div>
+                    <p id="erwachsener">
+                        <select name="erwachsener" id="e_dropdown">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                    <p id="e_icon"></p>
+                </div>
+                <div>
+                    <p id="kinder">
+                        <select name="kinder" id="k_dropdown">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                    <p id="k_icon"></p>
+
+                </div>
+                <div>
+                    <p id="babies">
+                        <select name="babies" id="b_dropdown">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </p>
+                    <p id="b_icon"></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="flugwahl.html">
+                <p id="suche">Suche</p>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

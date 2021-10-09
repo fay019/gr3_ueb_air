@@ -1,0 +1,109 @@
+html {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+#logo {
+    height: 4em;
+    background-image: url(images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    align-items: baseline;
+}
+
+.red {
+    color: #D81E05;
+    font-weight: bold;
+}
+
+#back {
+    font-weight: bold;
+}
+
+#back::after {
+    content: ' 'url(images/back.png);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#flug {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#datum {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.border {
+    background: white;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0.5em;
+}
+
+#daten {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#zeit {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+#zeit p {
+    margin-bottom: 0;
+}
+
+#personen {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#preis {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+#preis p{
+    border-bottom: 5px black double;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#weiter {
+    border-radius: 43px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 11em;
+    height: 3em;
+    line-height: 3em;
+    margin: 0;
+}

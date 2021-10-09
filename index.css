@@ -1,0 +1,184 @@
+/* mobile first portrait anfang */
+
+html {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #F6F6F6;
+}
+
+#wrapper {
+    padding-top: 25%;
+}
+
+#logo {
+    height: 4em;
+    background-image: url(images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.grey {
+    color: #8D8D8D;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#flugtyp_text {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flugtyp_auswahl {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flughafen_text {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flughafen_text p {
+    margin-bottom: 0;
+}
+
+#flughafen_auswahl {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flughafen {
+    font-size: 1.7em;
+    margin-bottom: 0.45em;
+}
+
+.datum {
+    background: white;
+    border: 1px solid #E8E8E8;
+    padding: 0.5em;
+    border-radius: 8px;
+}
+
+#datum_text {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#personen {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#erwachsener {
+    margin-bottom: 0;
+}
+
+#kinder {
+    margin-bottom: 0;
+}
+
+#babies {
+    margin-bottom: 0;
+}
+
+#erwachsener::after {
+    content: 'Erwachsener';
+}
+
+#kinder::after {
+    content: 'Kinder';
+}
+
+#babies::after {
+    content: 'Babies';
+}
+
+#e_icon, #k_icon, #b_icon {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#e_icon::after {
+    content: url(images/erwachsener_icon.png);
+    padding-left: calc(50% - 1em);
+}
+
+#k_icon::after {
+    content: url(images/kinder_icon.png);
+    padding-left: calc(50% - 1em);
+}
+
+#b_icon::after {
+    content: url(images/babies_icon.png);
+    padding-left: calc(50% - 1em);
+}
+
+#suche {
+    border-radius: 43px;
+    background-color: #5CB075;
+    color: white;
+    text-align: center;
+    width: 11em;
+    height: 3em;
+    line-height: 3em;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 321px) {
+    #personen {
+        gap: 0;
+    }
+}
+
+/* mobile first portrait ende */
+
+/* mobile first landscape anfang */
+
+@media (orientation:landscape) {
+    #wrapper {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    #logo {
+        height: 5em;
+    }
+    #flugtyp_text, #flugtyp_auswahl, #flughafen_text, #flughafen_auswahl, #datum_text {
+        justify-content: space-evenly;
+    }
+    #flughafen_text p {
+        margin-bottom: 0;
+    }
+    .flughafen {
+        font-size: 2em;
+    }
+}
+
+/* mobile first landscape ende */
