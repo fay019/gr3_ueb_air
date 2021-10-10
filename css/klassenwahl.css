@@ -9,7 +9,7 @@ body {
 
 #logo {
     height: 4em;
-    background-image: url(images/logo.png);
+    background-image: url(../images/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ header div {
 }
 
 #back::after {
-    content: ' 'url(images/back.png);
+    content: ' 'url(../images/back.png);
 }
 
 a {
@@ -78,32 +78,18 @@ a {
     margin-bottom: 0;
 }
 
-#personen {
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-#preis {
+#economy, #business {
     display: flex;
-    justify-content: flex-start;
-    font-weight: bold;
-}
-#preis p{
-    border-bottom: 5px black double;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em 2em 1em;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
+#economy {
+    background: rgba(15, 159, 56, 0.26);
+    margin-bottom: 0.5em;
 }
 
-#weiter {
-    border-radius: 43px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 11em;
-    height: 3em;
-    line-height: 3em;
-    margin: 0;
+#business {
+    background: rgba(15, 47, 159, 0.26);
 }

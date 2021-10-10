@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/weiter.css">
     <title>Index return</title>
 
 </head>
 
 <body>
     <div id="wrapper">
-        <div id="logo"></div>
+        <div id="logo">
+
+        </div>
         <header>
             <section id="flugtyp_text">
-                <span><a href="index_return.html">Hin- und Rückflug</a></span>
-                <span>Nur Hinflug</span>
+                <span>Hin- und Rückflug</span>
+                <span><a href="oneway.html">Nur Hinflug</a></span>
             </section>
 
             <section id="flugtyp_auswahl">
-                <input type="radio" name="flug" value="">
-                <input type="radio" name="flug" value="" checked>
+                <label for="flug-one"></label>
+                <input type="radio" name="flug" id="flug-one" value="" checked>
+                <label for="flug-tow"></label>
+                <input type="radio" name="flug" id="flug-tow" value="oneway.html" onchange="mySelected(this.value)">
             </section>
         </header>
         <main>
@@ -30,15 +35,17 @@
                 <p class="grey bold">Nach:</p>
             </section>
             <section id="flughafen_auswahl">
-                <span class="flughafen bold" id="start"><a href="suche_oneway_start.html">Wien</a></span>
-                <span class="flughafen bold" id="ende"><a href="suche_oneway_stop.html">Paris</a></span>
+                <span class="flughafen bold" id="start"><a href="suche_return_start.html">Wien</a></span>
+                <span class="flughafen bold" id="ende"><a href="suche_return_stop.html">Paris</a></span>
             </section>
             <section id="datum_text">
-                <a href="kalendar_oneway.html"><span class="datum">23/10/2021</span></a>
+                <a href="kalender_return.html"><span class="datum">23/10/2021</span></a>
+                <a href="kalender_return.html"><span class="datum">30/10/2021</span></a>
             </section>
             <section id="personen">
                 <div>
                     <p id="erwachsener">
+                        <label for="e_dropdown"></label>
                         <select name="erwachsener" id="e_dropdown">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
@@ -53,6 +60,7 @@
                 </div>
                 <div>
                     <p id="kinder">
+                        <label for="k_dropdown"></label>
                         <select name="kinder" id="k_dropdown">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
@@ -68,6 +76,7 @@
                 </div>
                 <div>
                     <p id="babies">
+                        <label for="b_dropdown"></label>
                         <select name="babies" id="b_dropdown">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
@@ -81,13 +90,14 @@
                     <p id="b_icon"></p>
                 </div>
             </section>
+            <div class="weiter">
+                <button id="weiter" onclick="location.href='flugwahl.html';">Suche</button>
+            </div>
         </main>
         <footer>
-            <a href="flugwahl.html">
-                <p id="suche">Suche</p>
-            </a>
         </footer>
     </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>

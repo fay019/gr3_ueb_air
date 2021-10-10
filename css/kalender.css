@@ -1,0 +1,98 @@
+/* mobile first portrait anfang*/
+body {
+    text-align: center;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 50% auto auto;
+    font-size: .4em;
+}
+tr > th.unselected {
+    background-color: rgba(245, 74, 74, 0.78);
+}
+table td {
+    border-style: solid;
+    border-width: 0;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding: 1.4em 1.2em;
+    word-break: normal;
+}
+
+table th {
+    border-style: solid;
+    border-width: 0;
+    font-size: 0.8em;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 1.4em 1.2em;
+    word-break: normal;
+}
+
+table .unselected {
+    background-color: #ffffff;
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: top
+}
+
+table .grey {
+    background-color: #ffffff;
+    color: #c0c0c0;
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: top
+}
+
+table .selected {
+    background-color: #fd6864;
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: top;
+    border: 0;
+}
+table .selected.first-day {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+table .selected.last-day {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+table .selected.first-week {
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+table .selected.last-week {
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.day {
+    font-size: 1.6em;
+    text-align: center;
+    vertical-align: top;
+    color: grey;
+    background-color: rgba(185, 185, 185, 0.43);
+}
+
+/* mobile first portrait ende */
+
+/* Desktop anfang */
+
+@media screen and (min-width: 900px) {
+    table {
+        font-size: 1em;
+        margin: 100px auto;
+    }
+}
+/* Desktop ende*/

@@ -6,10 +6,9 @@ html {
 body {
     background-color: #F6F6F6;
 }
-
 #logo {
     height: 4em;
-    background-image: url(images/logo.png);
+    background-image: url(../images/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,7 +33,7 @@ header div {
 }
 
 #back::after {
-    content: ' 'url(images/back.png);
+    content: ' 'url(../images/back.png);
 }
 
 a {
@@ -92,15 +91,4 @@ a {
 footer {
     display: flex;
     justify-content: center;
-}
-
-#weiter {
-    border-radius: 43px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 11em;
-    height: 3em;
-    line-height: 3em;
-    margin: 0;
 }

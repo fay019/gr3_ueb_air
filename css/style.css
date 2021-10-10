@@ -16,7 +16,7 @@ body {
 
 #logo {
     height: 4em;
-    background-image: url(images/logo.png);
+    background-image: url(../images/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -43,11 +43,15 @@ header {
 #flugtyp_text {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 #flugtyp_auswahl {
     display: flex;
     justify-content: space-around;
+}
+label[for*='flug'] {
+    display: none;
 }
 
 #flughafen_text {
@@ -82,8 +86,10 @@ header {
     margin-bottom: 1em;
 }
 
-a:hover {
-    cursor: pointer;
+select {
+    text-align: center;
+    width: 45px;
+    border-radius: 15px;
 }
 
 #personen {
@@ -122,30 +128,29 @@ a:hover {
 }
 
 #e_icon::after {
-    content: url(images/erwachsener_icon.png);
-    padding-left: calc(50% - 1em);
+    content: url(../images/erwachsener_icon.png);
+    /*padding-left: calc(50% - 1em);*/
+    position: relative;
+    left: 30px;
+    top: 8px;
 }
 
 #k_icon::after {
-    content: url(images/kinder_icon.png);
-    padding-left: calc(50% - 1em);
+    content: url(../images/kinder_icon.png);
+    /*padding-left: calc(50% - 1em);*/
+    position: relative;
+    left: 30px;
+    top: 3px;
 }
 
 #b_icon::after {
-    content: url(images/babies_icon.png);
-    padding-left: calc(50% - 1em);
+    content: url(../images/babies_icon.png);
+    /*padding-left: calc(50% - 1em);*/
+    position: relative;
+    left: 30px;
+    top: -5px;
 }
 
-#suche {
-    border-radius: 43px;
-    background-color: #5CB075;
-    color: white;
-    text-align: center;
-    width: 11em;
-    height: 3em;
-    line-height: 3em;
-    margin: 0;
-}
 
 footer {
     display: flex;

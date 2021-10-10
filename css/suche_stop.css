@@ -9,7 +9,7 @@ body {
 
 #logo {
     height: 4em;
-    background-image: url(images/logo.png);
+    background-image: url(../images/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -19,4 +19,20 @@ input {
     border: 2px #D81E05 solid;
     padding: 1.0625em 0.875em 1.0625em 0.875em;
     width: calc(100% - 1.95em);
+}
+
+.border {
+    background: white;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0.5em;
+}
+section span{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

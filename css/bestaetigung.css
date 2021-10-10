@@ -9,7 +9,7 @@ body {
 
 #logo {
     height: 4em;
-    background-image: url(images/logo.png);
+    background-image: url(../images/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ header div {
 }
 
 #back::after {
-    content: ' 'url(images/back.png);
+    content: ' 'url(../images/back.png);
 }
 
 a {
@@ -42,19 +42,54 @@ a {
     color: black;
 }
 
-#person {
-    font-size: 1.9em;
+#flug {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#datum {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.border {
+    background: white;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0.5em;
+}
+
+#daten {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
-input {
-    border: 2px #D81E05 solid;
-    padding: 1.0625em 0.875em 1.0625em 0.875em;
-    width: calc(100% - 1.95em);
+#zeit {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
 }
 
-#kontaktdaten {
-    font-size: 1.7em;
+#zeit p {
+    margin-bottom: 0;
+}
+
+#personen {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#preis {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+#preis p{
+    border-bottom: 5px black double;
 }
 
 footer {

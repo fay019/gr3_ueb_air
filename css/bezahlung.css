@@ -9,7 +9,7 @@ body {
 
 #logo {
     height: 4em;
-    background-image: url(images/logo.png);
+    background-image: url(../images/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ header div {
 }
 
 #back::after {
-    content: ' 'url(images/back.png);
+    content: ' 'url(../images/back.png);
 }
 
 a {
@@ -50,7 +50,7 @@ a {
     margin-top: 4em;
 }
 
-#test1, #test2, #test3, #test4 {
+#test1, #test2, #test3 {
     background: #000000;
     border: 2px solid #D81E05;
     border-radius: 6px;
@@ -59,14 +59,6 @@ a {
     color: white;
     text-align: center;
     margin-bottom: 4em;
-}
-
-#test4 {
-    background: #5CB075;
-    width: 50%;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* mobile first landscape anfang */
@@ -78,7 +70,7 @@ a {
     #test1 {
         margin-top: 2em;
     }
-    #test1, #test2, #test3, #test4 {
+    #test1, #test2, #test3 {
         background: #000000;
         border: 2px solid #D81E05;
         border-radius: 6px;
@@ -87,13 +79,6 @@ a {
         color: white;
         text-align: center;
         margin-bottom: 2em;
-    }
-    #test4 {
-        background: #5CB075;
-        width: 50%;
-        border: 2px solid black;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
