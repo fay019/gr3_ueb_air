@@ -13,7 +13,7 @@ a {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    margin: 50% auto auto;
+    margin: 20% auto;
     font-size: .4em;
 }
 tr > th.unselected {
